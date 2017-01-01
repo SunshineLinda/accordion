@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0;padding: 0;list-style: none;}
+	div{width: 300px;height: 800px;background: pink;text-align: center;border: 2px solid #ccc;margin-top: 10px;margin: 0 auto;}
+	h1{height: 50px;background: #ccc;line-height: 50px;margin-top: 5px;border: 1px solid blue}
+	ul li{height: 30px;line-height: 30px;background: gray;margin-top: 5px;}
+    ul{display: none}
+	</style>
+</head>
+<body>
+	<div id="box">
+	<h1>吃什么饭</h1>
+	<ul>
+		<li>麻辣烫</li>
+		<li>炒米皮</li>
+		<li>牛蛙爱上下</li>
+		<li>火锅</li>
+	</ul>
+	<h1>喝什么汤</h1>
+	<ul>
+		<li>皮蛋瘦肉粥</li>
+		<li>紫薯燕麦粥</li>
+		<li>牛奶水果粥</li>
+		<li>小米南瓜粥</li>
+	</ul>
+	<h1>吃什么菜</h1>
+	<ul>
+		<li>猪肉炖粉条</li>
+		<li>上海青炒大肠</li>
+		<li>西红柿炖牛腩</li>
+		<li>青椒炒肝尖</li>
+	</ul>
+	<h1>喝什么饮料</h1>
+	<ul>
+		<li>花花牛酸奶 </li>
+		<li>芬达</li>
+		<li>蜂蜜柚子茶</li>
+		<li>阿萨姆奶茶</li>
+	</ul>
+	</div>
+	<script>
+	var ul=document.getElementsByTagName('ul');
+	var h1=document.getElementsByTagName('h1');
+	/*for (var i = 0; i < h1.length; i++) {
+		h1[i].index=i
+	
+	    h1[i].onclick=function  () {
+		for (var j = 0; j < ul.length; j++) {
+		ul[j].style.display="none";	
+		}
+		ul[this.index].style.display="block";
+	}
+}*/ for (var i = 0; i < h1.length; i++) {
+	h1[i].index=i;
+	h1[i].onclick=function  () {
+		for (var j = 0; j < ul.length; j++) {
+			ul[j].style.display="none";
+		}
+		
+		ul[this.index].style.display="block"
+	}
+}
+	</script>
+</body>
+</html>
